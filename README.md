@@ -11,7 +11,8 @@
 # Mysql Login command
     mysql -u root -p
 # Change password for root user
-    ALTER USER 'root'@'localhost' IDENTIFIED BY 'Naresh#240';
+    ALTER USER 'root'@'localhost' IDENTIFIED BY 'Naresh#240#Kamani';
+    GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'Naresh#240#Kamani' WITH GRANT OPTION;
 # Create user with in mysql database
-    create user 'naresh'@'localhost' IDENTIFIED BY 'Naresh#240';
-    GRANT ALL PRIVILEGES ON *.* TO 'naresh'@'localhost' WITH GRANT OPTION;
+    create user 'naresh'@'localhost' IDENTIFIED BY 'Naresh#240#Kamani';
+    GRANT ALL PRIVILEGES ON *.* TO 'naresh'@'%' IDENTIFIED BY 'Naresh#240#Kamani' WITH GRANT OPTION;
